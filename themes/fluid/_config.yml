@@ -960,7 +960,7 @@ about:
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/0x00daemon/", tip: "GitHub" }
     - { class: "iconfont icon-twitter-fill", link: "https://twiiter.com/0x00daemon", tip: "X" }
-    - { class: "iconfont icon-youtube-fill", kink: "http://www.youtube.com/@0x00daemon" }
+    - { class: "iconfont icon-youtube-fill", link: "http://www.youtube.com/@0x00daemon", tip: "YouTube" }
 
 
 #---------------------------
@@ -982,7 +982,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: /img/index.png
+  banner_img: /img/err404.jpg
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)

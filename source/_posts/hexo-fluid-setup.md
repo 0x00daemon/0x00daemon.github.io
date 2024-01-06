@@ -1,6 +1,6 @@
 ---
-title: Hexo Fluid Theme
-tag: "make it"
+title: 0x01 - Hexo Fluid Theme Setup
+tag: "0x01"
 category: "make it"
 ---
 
@@ -101,6 +101,11 @@ hexo server
 
 ### Github Deployment
 
+**The github deployment can be performed two ways using Hexo git deployer (which uses Github workflow) or through git pages setup**
+
+Option 1 - provides github pages deployment
+Option 2 - provides github workflow/actions deployment (preferred and what I myself use)
+
 #### Option 1 - Using Hexo git deployer
 
 **Installing hexo-deployer-git:**
@@ -126,3 +131,54 @@ git config --global user.name "username"
 git config --global user.email "email@example.com"
 ```
 *be sure to change the ```username``` with your username and ```email@example.com``` to your email.*
+
+**Adding the github pages details:**
+
+*Make sure to edit the _config file with the following changes:*
+```yml
+deploy:
+  type: git
+  repo: <repository url>
+  branch: gh-pages
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+```
+*Make sure to change the ```repo``` to your repo link.*
+
+**Generating the blog:**
+
+```bash
+hexo clean && hexo deploy
+```
+
+#### Option 2 - Github workflow/actions deployment
+
+**Authenticating to Github:**
+
+*Installing Github*
+
+```bash
+apt install gh -y
+gh auth login
+```
+
+**Optional - but recommended github configs (I did these):**
+
+```bash
+git config --global credential.helper "cache --timeout=3600"
+git config --global user.name "username"
+git config --global user.email "email@example.com"
+```
+*be sure to change the ```username``` with your username and ```email@example.com``` to your email.*
+
+**Uploading the blog to github:**
+
+```bash
+git init
+git add --all
+git commit -m "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+git branch -M main
+git remote add origin <repo-link>
+git push -u origin main
+```
+
+Now if you may be thinking how can we edit the default title, images, icons, etc. and for that you can read the official documentation for Hexo and Fluid which is cryptic to say the least or follow through this ![blogging using hexo & fluid 101 guide](https://xdaem0n.com/2024/01/07/blogging-101/)
