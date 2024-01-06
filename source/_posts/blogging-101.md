@@ -1,8 +1,8 @@
 ---
 title: "0x02 - Blogging using Hexo & Fluid"
 tag: "0x02"
-category: "make it 2:00 AM"
-date: "1/6/2024"
+category: "make it"
+date: "1/6/2024 2:00 AM"
 ---
 
 This guide picks up where the Hexo Fluid setup guide left off.
