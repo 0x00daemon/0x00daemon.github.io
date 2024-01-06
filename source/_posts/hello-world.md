@@ -1,6 +1,6 @@
 ---
 title: 0x00 - Hello World
-tag: 0x00
+tag: "0x00"
 category: misc
 date: "1/5/2024"
 ---
