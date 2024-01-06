@@ -2,6 +2,7 @@
 title: 0x01 - Hexo Fluid Theme Setup
 tag: "0x01"
 category: "make it"
+date: "1/5/2024"
 ---
 
 "Hexo is a fast, simple, and powerful blog framework. You write posts in Markdown (or other markup languages), and Hexo generates static files with a beautiful theme in seconds." - Hexo official website.
@@ -182,3 +183,5 @@ git push -u origin main
 ```
 
 Now if you may be thinking how can we edit the default title, images, icons, etc. and for that you can read the official documentation for Hexo and Fluid which is cryptic to say the least or follow through this ![blogging using hexo & fluid 101 guide](https://xdaem0n.com/2024/01/07/blogging-101/)
+
+Recommended
