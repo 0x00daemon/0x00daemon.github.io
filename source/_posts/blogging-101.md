@@ -1,7 +1,7 @@
 ---
 title: "0x02 - Blogging using Hexo & Fluid"
 tag: "0x02"
-category: "make it"
+category: "make it 2:00 AM"
 date: "1/6/2024"
 ---
 
