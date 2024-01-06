@@ -2,7 +2,7 @@
 title: 0x01 - Hexo Fluid Theme Setup
 tag: "0x01"
 category: "make it"
-date: "1/5/2024"
+date: "2024/1/5"
 ---
 
 "Hexo is a fast, simple, and powerful blog framework. You write posts in Markdown (or other markup languages), and Hexo generates static files with a beautiful theme in seconds." - Hexo official website.
