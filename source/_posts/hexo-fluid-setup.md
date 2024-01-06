@@ -4,8 +4,6 @@ tag: "make it"
 category: "make it"
 ---
 
-### Background
-
 "Hexo is a fast, simple, and powerful blog framework. You write posts in Markdown (or other markup languages), and Hexo generates static files with a beautiful theme in seconds." - Hexo official website.
 
 The basic Hexo deployment is pretty bland, but the real magic of Hexo comes into play with the introduction of themes and plugins. Here, I will provide a step-by-step guide on how to set up Hexo and also install the most popular Hexo theme known as Fluid.
@@ -100,3 +98,31 @@ npm install css --save
 ```bash
 hexo server
 ```
+
+### Github Deployment
+
+#### Option 1 - Using Hexo git deployer
+
+**Installing hexo-deployer-git:**
+
+```bash
+npm install hexo-deployer-git --save
+```
+
+**Authenticating to Github:**
+
+*Installing Github*
+
+```bash
+apt install gh -y
+gh auth login
+```
+
+**Optional - but recommended github configs:**
+
+```bash
+git config --global credential.helper "cache --timeout=3600"
+git config --global user.name "username"
+git config --global user.email "email@example.com"
+```
+*be sure to change the ```username``` with your username and ```email@example.com``` to your email.*
