@@ -950,7 +950,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/index.png
+  banner_img: /img/cropped.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /img/logo-no-bg-dg.png
