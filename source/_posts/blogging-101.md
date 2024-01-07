@@ -139,3 +139,4 @@ I'm currently pursuing a degree in cybersecurity and am dedicated to exploring t
 
 That should cover the basic changes and setup. Feel free to modify other configurations in the Fluid theme `_config.yml` file for additional customization like changing the default banner images for the different pages, enabling comments etc.
 
+For my blog take a look here: [Github hosting](https://github.com/0x00daemon/0x00daemon.github.io)
