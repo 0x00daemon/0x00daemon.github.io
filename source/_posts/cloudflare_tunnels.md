@@ -32,7 +32,7 @@ Note: when setting up a tunnel you have multiple options and the best deployment
 
 Once you configure that part, save the tunnel. Now click on your tunnel that you just created and click on the configure button from the right side bar. 
 
-![configuring tunnel](https://github.com/0x00daemon/0x00daemon.github.io/blob/main/themes/fluid/source/img/for_blog/0x04/cat_1.png)
+![configuring tunnel](img/for_blog/0x04/cat_1.png)
 
 Next go to the private networks tab and add your home private network with CIDR.
 
