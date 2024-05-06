@@ -24,7 +24,7 @@ Next, you may have to do a first time setup and suring the setup if there is a m
 
 Next, you will need to head to Networks from the sidebar and then tunnels. On the tunnels page, click on the create a new tunnel option:
 
-![Accessing the Tunnels Page](https://github.com/0x00daemon/0x00daemon.github.io/blob/main/themes/fluid/source/img/for_blog/0x04/cat_1.png)
+![Accessing the Tunnels Page](for_blog/0x04/cat_1.png)
 
 Next, Follow the part 1 of the following guide by cloudflare guide on setting up tunnels: [Create a tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/)
 
