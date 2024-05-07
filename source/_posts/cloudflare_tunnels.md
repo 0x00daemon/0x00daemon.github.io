@@ -31,7 +31,7 @@ Note: When setting up a tunnel, you have multiple options. The best deployment o
 
 Once you've configured that part, save the tunnel. Now, click on the tunnel you just created and click on the "configure" button from the right sidebar.
 
-![Configuring tunnel](img/for_blog/0x04/cat_1.png)
+![Configuring tunnel](img/for_blog/0x04/cat_2.png)
 
 Next, go to the private networks tab and add your home private network with CIDR.
 
