@@ -258,34 +258,8 @@ host = pi.hole.home
 
 --smokeping service file configuration--
 
-Edit the smokeping.servic
+Edit the smokeping.service file: /etc/systemd/system/smokeping.service 
 
-```
-[Unit]
-Description=Smokeping Server: Latency Logging and Graphing System
-After=syslog.target network-online.target
-
-[Service]
-ExecStart=/usr/local/smokeping/bin/smokeping --nodaemon --config=/usr/local/smokeping/etc/config --logfile=/var/log/smokeping.log
-PermissionsStartOnly=true
-ExecStartPre=/usr/libexec/smokeping-fix-ownership
-ExecReload=/bin/kill -HUP $MAINPID
-StandardError=syslog
-User=smokeping
-Group=apache
-Restart=always
-RestartSec=1
-Nice=19
-IOSchedulingClass=3
-PrivateTmp=true
-CapabilityBoundingSet=CAP_CHOWN CAP_SETGID CAP_SETUID CAP_DAC_OVERRIDE CAP_KILL CAP_NET_ADMIN CAP_NET_BROADCAST CAP_NET_RAW CAP_SYS_CHROOT
-ReadOnlyDirectories=/etc
-ReadOnlyDirectories=/usr
-
-[Install]
-WantedBy=multi-user.target
-```
-working service file:
 ```
 [Unit]
 Description=Smokeping Server: Latency Logging and Graphing System
@@ -320,7 +294,7 @@ chown apache:apache -R /usr/local/smokeping/
 
 --smokeping httpd config--
 
-add the following config to the smokeping.conf file f
+Add the following config to the smokeping.conf file in httpd: /etc/httpd/conf.d/smokeping.conf
 
 ```
 <Directory "/usr/local/smokeping/cache">
@@ -344,8 +318,10 @@ Alias /smokeping /usr/local/smokeping/htdocs/
 systemctl enable httpd.service
 ```
 
-reboot the system:
+--Reboot the system--
 
 ```
 reboot
 ```
+
+Note check and make sure there are approprite permissions set for the smokeping folder which should be 755 for /usr/local/smokeping if you encounter any issues related to service failing.
