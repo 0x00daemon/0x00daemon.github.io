@@ -2,7 +2,7 @@
 title: 0x06 - Ghidra Installation
 tag: "0x06"
 category: "dot it"
-date: "1/5/2024 12:00 AM"
+date: "2/9/2025 7:00 PM"
 ---
 
 **Installing Ghidra on Kali Linux VM**
