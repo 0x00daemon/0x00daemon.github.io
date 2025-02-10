@@ -1,7 +1,7 @@
 ---
 title: 0x06 - Ghidra Installation
 tag: "0x06"
-category: "dot it"
+category: "do it"
 date: "2/9/2025 7:00 PM"
 ---
 
